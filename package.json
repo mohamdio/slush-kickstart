@@ -1,0 +1,49 @@
+{
+  "name": "slush-kickstart",
+  "description": "A slush generator to scaffold web apps",
+  "version": "1.0.0",
+  "homepage": "https://github.com/mohamdio/slush-kickstart",
+  "author": {
+    "name": "mohamdio",
+    "email": "mandooox@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mohamdio/slush-kickstart.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mohamdio/slush-kickstart/issues"
+  },
+  "license": "MIT",
+  "main": "slushfile.js",
+  "engines": {
+    "node": ">= 0.10.26",
+    "npm": ">=1.4.3"
+  },
+  "scripts": {
+    "test": "echo \"No tests\""
+  },
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-conflict": "^0.4.0",
+    "gulp-install": "^0.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-template": "^3.1.0",
+    "iniparser": "^1.0.5",
+    "inquirer": "^0.11.1",
+    "slush": "^1.1.1",
+    "underscore.string": "^3.2.2"
+  },
+  "keywords": [
+    "slushgenerator",
+    "gulp",
+    "foundation",
+    "bootstrap",
+    "sass",
+    "nunjucks",
+    "browser-sync",
+    "front-end",
+    "web",
+    "app"
+  ]
+}
