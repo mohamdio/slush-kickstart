@@ -1,0 +1,16 @@
+.DS_Store
+
+# dependency directory
+node_modules
+bower_components
+*.node
+
+# project directory
+/build/
+/source/
+/test/
+
+# logs
+logs
+*.log
+npm-debug.log*
