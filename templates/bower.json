@@ -1,0 +1,54 @@
+{
+  "name": "Gulpfile Setup",
+  "description": "",
+  "authors": [
+    "mohamdio"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/mohamdio/gulpfile-setup",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "foundation-sites": "~6.0.5",
+    "bootstrap": "https://github.com/twbs/bootstrap/archive/v4.0.0-alpha.zip",
+    "font-awesome": "~4.5.0"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "scss/**/*.scss",
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js",
+        "dist/js/bootstrap.min.js"
+      ]
+    },
+    "foundation-sites": {
+      "main": [
+        "scss/**/*.scss",
+        "dist/foundation.css",
+        "dist/*.js"
+      ]
+    },
+    "jquery": {
+      "main": [
+        "dist/jquery.js",
+        "dist/jquery.min.js"
+      ]
+    },
+    "font-awesome": {
+      "main": [
+        "scss/**/*.scss",
+        "css/font-awesome.css",
+        "fonts/**/*"
+      ]
+    }
+  }
+}
