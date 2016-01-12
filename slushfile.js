@@ -71,6 +71,9 @@ gulp.task('default', function (done) {
         message: 'What is the author email?',
         default: defaults.authorEmail
     }, {
+        name: 'authorUrl',
+        message: 'What is the author url?'
+    }, {
         name: 'userName',
         message: 'What is the github username?',
         default: defaults.userName
