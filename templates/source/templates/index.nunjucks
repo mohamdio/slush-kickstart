@@ -1,0 +1,8 @@
+<!-- index.nunjucks -->
+{% extends "layouts/default.nunjucks" %}
+
+{% block title %}Gulp workflow{% endblock %}
+
+{% block content %} 
+<h1>Gulp workflow for front-end development</h1>
+{% endblock %}
