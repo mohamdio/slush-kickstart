@@ -5,8 +5,8 @@ node_modules/
 temp
 *.node
 
-# submodule directory
-/submodule/
+# gulp-workflow directory
+/templates/gulp-workflow/
 
 # logs
 logs
