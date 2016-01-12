@@ -5,6 +5,9 @@ node_modules/
 temp
 *.node
 
+# submodule directory
+/submodule/
+
 # logs
 logs
 *.log
