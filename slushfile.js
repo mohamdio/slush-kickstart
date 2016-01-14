@@ -1,6 +1,7 @@
 /*
  * slush-kickstart
  * https://github.com/mohamdio/slush-kickstart
+ * A slush generator to scaffold web apps
  *
  * Copyright (c) 2016, mohamdio
  * Licensed under the MIT license.
@@ -22,15 +23,14 @@ function format(string) {
     return username.replace(/\s/g, '');
 }
 
-var defaults = (function () {
+var defaults = (function() {
     var workingDirName = path.basename(process.cwd()),
-      homeDir, osUserName, configFile, user;
+        homeDir, osUserName, configFile, user;
 
     if (process.platform === 'win32') {
         homeDir = process.env.USERPROFILE;
         osUserName = process.env.USERNAME || path.basename(homeDir).toLowerCase();
-    }
-    else {
+    } else {
         homeDir = process.env.HOME || process.env.HOMEPATH;
         osUserName = homeDir && homeDir.split('/').pop() || 'root';
     }
@@ -50,7 +50,7 @@ var defaults = (function () {
     };
 })();
 
-gulp.task('default', function (done) {
+gulp.task('default', function(done) {
     var prompts = [{
         name: 'appName',
         message: 'What is the name of your project?',
@@ -61,7 +61,7 @@ gulp.task('default', function (done) {
     }, {
         name: 'appVersion',
         message: 'What is the version of your project?',
-        default: '0.1.0'
+        default: '1.0.0'
     }, {
         name: 'authorName',
         message: 'What is the author name?',
@@ -78,20 +78,63 @@ gulp.task('default', function (done) {
         message: 'What is the github username?',
         default: defaults.userName
     }, {
+        type: 'list',
+        name: 'license',
+        message: 'What is the project license? (use arrow keys select)',
+        choices: ['MIT', 'BSD'],
+        default: 'MIT'
+    }, {
+        type: 'list',
+        name: 'cssFramework',
+        message: 'What is the css framework want to use? (use arrow keys select)',
+        choices: ['foundation-sites', 'foundation-apps', 'bootstrap', 'bootstrap v4.0.0-alpha'],
+        default: 'foundation-sites'
+    }, {
+        type: 'checkbox',
+        name: 'iconFonts',
+        message: 'Which icon fonts want to include? (use arrow keys and spacebar to select/deselect)',
+        choices: [
+            {
+            name: 'Font Awesome',
+            value: 'fontAwesome',
+            checked: true
+            }, {
+            name: 'Foundation Icon Fonts',
+            value: 'foundationIconFonts',
+            }, {
+            name: 'Ionicons',
+            value: 'ionicons',
+            }, {
+            name: 'IcoMoon',
+            value: 'icoMoon',
+            }, {
+            name: 'Octicons',
+            value: 'octicons',
+            }, {
+            name: 'Typicons',
+            value: 'typicons',
+            }, {
+            name: 'Devicons',
+            value: 'devicons',
+            }
+        ]
+    }, {
         type: 'confirm',
         name: 'moveon',
         message: 'Continue?'
     }];
     //Ask
     inquirer.prompt(prompts,
-        function (answers) {
+        function(answers) {
             if (!answers.moveon) {
                 return done();
             }
             answers.appNameSlug = _.slugify(answers.appName);
+            var d = new Date();
+            answers.year = d.getFullYear();
             gulp.src(__dirname + '/templates/**')
                 .pipe(template(answers))
-                .pipe(rename(function (file) {
+                .pipe(rename(function(file) {
                     if (file.basename[0] === '_') {
                         file.basename = '.' + file.basename.slice(1);
                     }
@@ -99,7 +142,7 @@ gulp.task('default', function (done) {
                 .pipe(conflict('./'))
                 .pipe(gulp.dest('./'))
                 .pipe(install())
-                .on('end', function () {
+                .on('end', function() {
                     done();
                 });
         });
