@@ -1,8 +1,12 @@
 <!-- index.nunjucks -->
 {% extends "layouts/default.nunjucks" %}
 
-{% block title %}Gulp workflow{% endblock %}
+{% block title %}Home{% endblock %}
 
 {% block content %} 
-<h1>Gulp workflow for front-end development</h1>
+<% if (cssFramework === 'foundation-sites' || cssFramework === 'foundation-apps') { %>
+{% include "includes/foundation.nunjucks" %}
+<% } else if (cssFramework === 'bootstrap' || cssFramework === 'bootstrap v4.0.0-alpha') { %>
+{% include "includes/bootstrap.nunjucks" %}
+<% } else {} %>
 {% endblock %}
