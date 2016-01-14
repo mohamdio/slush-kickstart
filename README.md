@@ -2,7 +2,7 @@ work in progress..
 
 # Slush Kickstart
 
-> A slush generator to scaffold web apps
+> A slush generator to scaffold front-end projects
 
 
 ## Getting Started

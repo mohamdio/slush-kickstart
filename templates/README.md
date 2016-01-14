@@ -1,11 +1,11 @@
-##<%= appName %> [![Build Status](https://travis-ci.org/<%= userName %>/<%= appNameSlug %>.svg?branch=master)](https://travis-ci.org/<%= userName %>/<%= appNameSlug %>)
-<%= appDescription %>
-* [Features](https://github.com/<%= userName %>/<%= appNameSlug %>#features)
-* [Gulp Tasks Structure](https://github.com/<%= userName %>/<%= appNameSlug %>#gulp-tasks-structure)
-* [Getting Started](https://github.com/<%= userName %>/<%= appNameSlug %>#getting-started)
-* [Folders Structure](https://github.com/<%= userName %>/<%= appNameSlug %>#folders-structure)
-* [Configuration & Paths](https://github.com/<%= userName %>/<%= appNameSlug %>#configuration--paths)
-* [License](https://github.com/<%= userName %>/<%= appNameSlug %>#license)
+##<%= projectName %> [![Build Status](https://travis-ci.org/<%= userName %>/<%= projectNameSlug %>.svg?branch=master)](https://travis-ci.org/<%= userName %>/<%= projectNameSlug %>)
+<%= projectDescription %>
+* [Features](https://github.com/<%= userName %>/<%= projectNameSlug %>#features)
+* [Gulp Tasks Structure](https://github.com/<%= userName %>/<%= projectNameSlug %>#gulp-tasks-structure)
+* [Getting Started](https://github.com/<%= userName %>/<%= projectNameSlug %>#getting-started)
+* [Folders Structure](https://github.com/<%= userName %>/<%= projectNameSlug %>#folders-structure)
+* [Configuration & Paths](https://github.com/<%= userName %>/<%= projectNameSlug %>#configuration--paths)
+* [License](https://github.com/<%= userName %>/<%= projectNameSlug %>#license)
 
 ##Features
 - Organized & splitting tasks files
@@ -24,7 +24,7 @@
 - Image optimization
 - Generate favicons
 - Concat css/js files
-- & more, take a look at the gulp plugins used in [package.json](https://github.com/<%= userName %>/<%= appNameSlug %>/blob/master/package.json)
+- & more, take a look at the gulp plugins used in [package.json](https://github.com/<%= userName %>/<%= projectNameSlug %>/blob/master/package.json)
 
 ##Gulp Tasks Structure
 This is gulp folder structure:
@@ -67,7 +67,7 @@ npm install -g gulp bower
 - In terminal/command line, `cd` into your project directory
 - Clone this workflow 
 ```
-git clone https://github.com/<%= userName %>/<%= appNameSlug %>.git .
+git clone https://github.com/<%= userName %>/<%= projectNameSlug %>.git .
 ```
 - Clone [source folder structure](https://github.com/mohamdio/gulp-source-structure) 
 ```
@@ -88,21 +88,21 @@ bower install
 ####Available Tasks
 Task Name | Subtasks | Description
 --- | --- | ---
-`clean` | `clean:cache` - `clean:prod` | clean dest folders (dev & prod) & caches :: [base/clean.js](https://github.com/<%= userName %>/<%= appNameSlug %>/blob/master/gulp/tasks/base/clean.js)
-`bower` | `bower:clean` - `bower:scss` - `bower:js` - `bower:css` - `bower:fonts` | dest all bower dependencies to source folder :: [base/bower.js](https://github.com/<%= userName %>/<%= appNameSlug %>/blob/master/gulp/tasks/base/bower.js)
-`fonts` | --- | copy all fonts to dev folder :: [default/fonts.js](https://github.com/<%= userName %>/<%= appNameSlug %>/blob/master/gulp/tasks/default/fonts.js)
-`sass` | `sass:compile` - `sass:doc` - `sass:cssRebaseUrl` | compile sass files with docs & rebase css url :: [default/sass.js](https://github.com/<%= userName %>/<%= appNameSlug %>/blob/master/gulp/tasks/default/sass.js)
-`js` | `js:browserify` - `js:copySrc` | browserify & uglify js files & copy source js files to dev folder :: [default/scripts.js](https://github.com/<%= userName %>/<%= appNameSlug %>/blob/master/gulp/tasks/default/scripts.js)
-`images` | `images:minify` - `images:favicons` | minify images & generate favicons :: [default/images.js](https://github.com/<%= userName %>/<%= appNameSlug %>/blob/master/gulp/tasks/default/images.js)
-`nunjucks` | `nunjucks:render` - `nunjucks:inject` | render nunjucks files & inject css/js files :: [default/nunjucks.js](https://github.com/<%= userName %>/<%= appNameSlug %>/blob/master/gulp/tasks/default/nunjucks.js)
-`serve` | `serve:prod` | start server & open browser for dev or prod mode :: [base/serve.js](https://github.com/<%= userName %>/<%= appNameSlug %>/blob/master/gulp/tasks/base/serve.js)
-`watch` | --- | start gulp watch for tasks (bower - sass - nunjucks - js) :: [base/watch.js](https://github.com/<%= userName %>/<%= appNameSlug %>/blob/master/gulp/tasks/base/watch.js)
+`clean` | `clean:cache` - `clean:prod` | clean dest folders (dev & prod) & caches :: [base/clean.js](https://github.com/<%= userName %>/<%= projectNameSlug %>/blob/master/gulp/tasks/base/clean.js)
+`bower` | `bower:clean` - `bower:scss` - `bower:js` - `bower:css` - `bower:fonts` | dest all bower dependencies to source folder :: [base/bower.js](https://github.com/<%= userName %>/<%= projectNameSlug %>/blob/master/gulp/tasks/base/bower.js)
+`fonts` | --- | copy all fonts to dev folder :: [default/fonts.js](https://github.com/<%= userName %>/<%= projectNameSlug %>/blob/master/gulp/tasks/default/fonts.js)
+`sass` | `sass:compile` - `sass:doc` - `sass:cssRebaseUrl` | compile sass files with docs & rebase css url :: [default/sass.js](https://github.com/<%= userName %>/<%= projectNameSlug %>/blob/master/gulp/tasks/default/sass.js)
+`js` | `js:browserify` - `js:copySrc` | browserify & uglify js files & copy source js files to dev folder :: [default/scripts.js](https://github.com/<%= userName %>/<%= projectNameSlug %>/blob/master/gulp/tasks/default/scripts.js)
+`images` | `images:minify` - `images:favicons` | minify images & generate favicons :: [default/images.js](https://github.com/<%= userName %>/<%= projectNameSlug %>/blob/master/gulp/tasks/default/images.js)
+`nunjucks` | `nunjucks:render` - `nunjucks:inject` | render nunjucks files & inject css/js files :: [default/nunjucks.js](https://github.com/<%= userName %>/<%= projectNameSlug %>/blob/master/gulp/tasks/default/nunjucks.js)
+`serve` | `serve:prod` | start server & open browser for dev or prod mode :: [base/serve.js](https://github.com/<%= userName %>/<%= projectNameSlug %>/blob/master/gulp/tasks/base/serve.js)
+`watch` | --- | start gulp watch for tasks (bower - sass - nunjucks - js) :: [base/watch.js](https://github.com/<%= userName %>/<%= projectNameSlug %>/blob/master/gulp/tasks/base/watch.js)
 `build` | --- | main build task for prod mode
---- | `build:fonts` | copy fonts to prod folder :: [build/fonts.js](https://github.com/<%= userName %>/<%= appNameSlug %>/blob/master/gulp/tasks/build/fonts.js)
---- | `build:css` | rebase url/remove unused selectors/strip comments/beautify/concat/minify :: [build/css.js](https://github.com/<%= userName %>/<%= appNameSlug %>/blob/master/gulp/tasks/build/css.js)
---- | `build:js` | copy js files to prod folder :: [build/scripts.js](https://github.com/<%= userName %>/<%= appNameSlug %>/blob/master/gulp/tasks/build/scripts.js)
---- | `build:images` | copy images to prod folder :: [build/images.js](https://github.com/<%= userName %>/<%= appNameSlug %>/blob/master/gulp/tasks/build/images.js)
---- | `build:html` | copy & prettify html files and inject minified css/js files :: [build/html.js](https://github.com/<%= userName %>/<%= appNameSlug %>/blob/master/gulp/tasks/build/html.js)
+--- | `build:fonts` | copy fonts to prod folder :: [build/fonts.js](https://github.com/<%= userName %>/<%= projectNameSlug %>/blob/master/gulp/tasks/build/fonts.js)
+--- | `build:css` | rebase url/remove unused selectors/strip comments/beautify/concat/minify :: [build/css.js](https://github.com/<%= userName %>/<%= projectNameSlug %>/blob/master/gulp/tasks/build/css.js)
+--- | `build:js` | copy js files to prod folder :: [build/scripts.js](https://github.com/<%= userName %>/<%= projectNameSlug %>/blob/master/gulp/tasks/build/scripts.js)
+--- | `build:images` | copy images to prod folder :: [build/images.js](https://github.com/<%= userName %>/<%= projectNameSlug %>/blob/master/gulp/tasks/build/images.js)
+--- | `build:html` | copy & prettify html files and inject minified css/js files :: [build/html.js](https://github.com/<%= userName %>/<%= projectNameSlug %>/blob/master/gulp/tasks/build/html.js)
 
 ##Folders Structure
 - `source` folder : contain all source files
@@ -189,7 +189,7 @@ gulp-workflow
 ```
 
 ##Configuration & Paths
-- From [`gulp/config.js`](https://github.com/<%= userName %>/<%= appNameSlug %>/blob/master/gulp/config.js) you can define tasks & plugins options without change anything in task file, example :
+- From [`gulp/config.js`](https://github.com/<%= userName %>/<%= projectNameSlug %>/blob/master/gulp/config.js) you can define tasks & plugins options without change anything in task file, example :
 ```javascript
 // bower task mainBowerFiles options
     mainBowerFiles: {
@@ -207,7 +207,7 @@ gulp-workflow
     },
 ```
 
-- From [`gulp/paths.js`](https://github.com/<%= userName %>/<%= appNameSlug %>/blob/master/gulp/paths.js) you can define all paths for tasks, example :
+- From [`gulp/paths.js`](https://github.com/<%= userName %>/<%= projectNameSlug %>/blob/master/gulp/paths.js) you can define all paths for tasks, example :
 ```javascript
 // base paths
 var src    = './source/',
@@ -225,4 +225,4 @@ var src    = './source/',
 ```
 
 ##License
-The code is available under the [<%= license %> License](https://github.com/<%= userName %>/<%= appNameSlug %>/LICENSE).
+The code is available under the [<%= license %> License](https://github.com/<%= userName %>/<%= projectNameSlug %>/LICENSE).

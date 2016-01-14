@@ -4,7 +4,7 @@
 {% block title %}Home{% endblock %}
 
 {% block content %} 
-<% if (cssFramework === 'foundation-sites' || cssFramework === 'foundation-apps') { %>
+<% if (cssFramework === 'foundation-sites') { %>
 {% include "includes/foundation.nunjucks" %}
 <% } else if (cssFramework === 'bootstrap' || cssFramework === 'bootstrap v4.0.0-alpha') { %>
 {% include "includes/bootstrap.nunjucks" %}

@@ -90,7 +90,16 @@ module.exports = {
         // main options
         options: {
             includePaths: [
-                path.to.sass.vendor, path.to.sass.foundation, path.to.sass.bootstrap
+                path.to.sass.vendor, 
+                <% if 
+                (cssFramework === 'foundation-sites') { %>
+                path.to.sass.foundation,
+                <% } else if (cssFramework === 'bootstrap v4.0.0-alpha') { %>
+                path.to.sass.bootstrap,
+                <% } else {} %>
+                <% if (fontAwesome) { %>
+                path.to.sass.fontAwesome
+                <% } %>
             ],
             outputStyle: 'expanded'
             // more options

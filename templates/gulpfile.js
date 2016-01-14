@@ -1,7 +1,7 @@
 /*
- * <%= appName %>
- * <%= appDescription %>
- * https://github.com/<%= userName %>/<%= appNameSlug %>
+ * <%= projectName %>
+ * <%= projectDescription %>
+ * https://github.com/<%= userName %>/<%= projectNameSlug %>
  *
  * Copyright (c) <%= year %>, <%= authorName %>
  * Licensed under the <%= license %> license.

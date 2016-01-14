@@ -1,7 +1,7 @@
 /*
  * slush-kickstart
  * https://github.com/mohamdio/slush-kickstart
- * A slush generator to scaffold web apps
+ * A slush generator to scaffold front-end projects
  *
  * Copyright (c) 2016, mohamdio
  * Licensed under the MIT license.
@@ -43,7 +43,7 @@ var defaults = (function() {
     }
 
     return {
-        appName: workingDirName,
+        projectName: workingDirName,
         userName: osUserName || format(user.name || ''),
         authorName: user.name || '',
         authorEmail: user.email || ''
@@ -52,14 +52,14 @@ var defaults = (function() {
 
 gulp.task('default', function(done) {
     var prompts = [{
-        name: 'appName',
+        name: 'projectName',
         message: 'What is the name of your project?',
-        default: defaults.appName
+        default: defaults.projectName
     }, {
-        name: 'appDescription',
+        name: 'projectDescription',
         message: 'What is the description?'
     }, {
-        name: 'appVersion',
+        name: 'projectVersion',
         message: 'What is the version of your project?',
         default: '1.0.0'
     }, {
@@ -87,7 +87,7 @@ gulp.task('default', function(done) {
         type: 'list',
         name: 'cssFramework',
         message: 'What is the css framework want to use? (use arrow keys select)',
-        choices: ['foundation-sites', 'foundation-apps', 'bootstrap', 'bootstrap v4.0.0-alpha'],
+        choices: ['foundation-sites', 'bootstrap', 'bootstrap v4.0.0-alpha'],
         default: 'foundation-sites'
     }, {
         type: 'checkbox',
@@ -129,7 +129,7 @@ gulp.task('default', function(done) {
             if (!answers.moveon) {
                 return done();
             }
-            answers.appNameSlug = _.slugify(answers.appName);
+            answers.projectNameSlug = _.slugify(answers.projectName);
             var d = new Date();
             answers.year = d.getFullYear();
             gulp.src(__dirname + '/templates/**')

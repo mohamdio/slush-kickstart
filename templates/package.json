@@ -1,7 +1,7 @@
 {
-  "name": "<%= appNameSlug %>",
-  "version": "<%= appVersion %>",
-  "description": "<%= appDescription %>",
+  "name": "<%= projectNameSlug %>",
+  "version": "<%= projectVersion %>",
+  "description": "<%= projectDescription %>",
   "main": "gulpfile.js",
   "author": {
   	"name": "<%= authorName %>",
@@ -11,7 +11,7 @@
   "license": "<%= license %>",
   "repository": {
   	"type": "git",
-  	"url": "https://github.com/<%= userName %>/<%= appNameSlug %>.git"
+  	"url": "https://github.com/<%= userName %>/<%= projectNameSlug %>.git"
   },
   "devDependencies": {
     "browser-sync": "^2.11.0",

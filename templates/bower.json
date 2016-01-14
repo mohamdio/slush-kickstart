@@ -1,14 +1,14 @@
 {
-  "name": "<%= appName %>",
-  "description": "<%= appDescription %>",
+  "name": "<%= projectName %>",
+  "description": "<%= projectDescription %>",
   "authors": [
     "<%= authorName %> <<%= authorEmail %>> (<%= authorUrl %>)"
   ],
   "license": "<%= license %>",
-  "homepage": "https://github.com/<%= userName %>/<%= appNameSlug %>",
+  "homepage": "https://github.com/<%= userName %>/<%= projectNameSlug %>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/<%= userName %>/<%= appNameSlug %>.git"
+    "url": "https://github.com/<%= userName %>/<%= projectNameSlug %>.git"
   },
   "moduleType": [],
   "private": true,
@@ -22,8 +22,6 @@
   "dependencies": {
     <% if (cssFramework === 'foundation-sites') { %> 
     "foundation-sites": "~6.0.5",
-    <% } else if (cssFramework === 'foundation-apps') { %>
-    "foundation-apps": "~1.2.0",
     <% } else if (cssFramework === 'bootstrap') { %>
     "bootstrap": "~3.3.6",
     <% } else if (cssFramework === 'bootstrap v4.0.0-alpha') { %>
@@ -59,14 +57,6 @@
         "scss/**/*.scss",
         "dist/foundation.css",
         "dist/*.js"
-      ]
-    },
-    <% } else if (cssFramework === 'foundation-apps') { %>
-    "foundation-apps": {
-      "main": [
-        "scss/**/*.scss",
-        "dist/css/foundation-apps.css",
-        "dist/js/*.js"
       ]
     },
     <% } else if (cssFramework === 'bootstrap') { %>

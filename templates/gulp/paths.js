@@ -32,12 +32,17 @@ module.exports = {
         sass: {
             src: [
                 src + 'scss/**/*.{scss,sass}',
-                '!' + src + 'scss/vendor/lib/**/*.{scss,sass}',
-                '!' + src + 'scss/vendor/bootstrap.scss'
+                '!' + src + 'scss/vendor/lib/**/*.{scss,sass}'
             ],
             vendor: src + 'scss/vendor/lib/',
+            <% if (cssFramework === 'foundation-sites') { %>
             foundation: src + 'scss/vendor/lib/foundation-sites/scss',
+            <% } else if (cssFramework === 'bootstrap v4.0.0-alpha') { %>
             bootstrap: src + 'scss/vendor/lib/bootstrap/scss',
+            <% } else {} %>
+            <% if (fontAwesome) { %>
+            fontAwesome: src + 'scss/vendor/lib/font-awesome/scss',
+            <% } %>
             dist: {
                 dev: dist + dev + assets + 'css',
                 prod: dist + prod + assets + 'css'
