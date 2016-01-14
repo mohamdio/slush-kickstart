@@ -1,11 +1,15 @@
 {
-  "name": "Gulpfile Setup",
-  "description": "",
+  "name": "<%= appName %>",
+  "description": "<%= appDescription %>",
   "authors": [
-    "mohamdio"
+    "<%= authorName %> <<%= authorEmail %>> (<%= authorUrl %>)"
   ],
-  "license": "MIT",
-  "homepage": "https://github.com/mohamdio/gulpfile-setup",
+  "license": "<%= license %>",
+  "homepage": "https://github.com/<%= userName %>/<%= appNameSlug %>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/<%= userName %>/<%= appNameSlug %>.git"
+  },
   "moduleType": [],
   "private": true,
   "ignore": [
@@ -16,12 +20,64 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "~2.1.4",
+    <% if (cssFramework === 'foundation-sites') { %> 
     "foundation-sites": "~6.0.5",
+    <% } else if (cssFramework === 'foundation-apps') { %>
+    "foundation-apps": "~1.2.0",
+    <% } else if (cssFramework === 'bootstrap') { %>
+    "bootstrap": "~3.3.6",
+    <% } else if (cssFramework === 'bootstrap v4.0.0-alpha') { %>
     "bootstrap": "https://github.com/twbs/bootstrap/archive/v4.0.0-alpha.zip",
-    "font-awesome": "~4.5.0"
+    <% } else {} %>
+    <% if (fontAwesome) { %>
+    "font-awesome": "~4.5.0",
+    <% } %>
+    <% if (foundationIconFonts) { %>
+    "foundation-icon-fonts": "*",
+    <% } %>
+    <% if (ionicons) { %>
+    "ionicons": "~2.0.1",
+    <% } %>
+    <% if (icoMoon) { %>
+    "icomoon": "~0.1.0",
+    <% } %>
+    <% if (octicons) { %>
+    "octicons": "~3.3.0",
+    <% } %>
+    <% if (typicons) { %>
+    "typicons": "~2.0.7",
+    <% } %>
+    <% if (devicons) { %>
+    "devicons": "~1.8.0",
+    <% } %>
+    "jquery": "~2.1.4"
   },
   "overrides": {
+    <% if (cssFramework === 'foundation-sites') { %>
+    "foundation-sites": {
+      "main": [
+        "scss/**/*.scss",
+        "dist/foundation.css",
+        "dist/*.js"
+      ]
+    },
+    <% } else if (cssFramework === 'foundation-apps') { %>
+    "foundation-apps": {
+      "main": [
+        "scss/**/*.scss",
+        "dist/css/foundation-apps.css",
+        "dist/js/*.js"
+      ]
+    },
+    <% } else if (cssFramework === 'bootstrap') { %>
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js",
+        "dist/js/bootstrap.min.js"
+      ]
+    },
+    <% } else if (cssFramework === 'bootstrap v4.0.0-alpha') { %>
     "bootstrap": {
       "main": [
         "scss/**/*.scss",
@@ -30,24 +86,41 @@
         "dist/js/bootstrap.min.js"
       ]
     },
-    "foundation-sites": {
-      "main": [
-        "scss/**/*.scss",
-        "dist/foundation.css",
-        "dist/*.js"
-      ]
-    },
-    "jquery": {
-      "main": [
-        "dist/jquery.js",
-        "dist/jquery.min.js"
-      ]
-    },
+    <% } else {} %>
+    <% if (fontAwesome) { %>
     "font-awesome": {
       "main": [
         "scss/**/*.scss",
         "css/font-awesome.css",
         "fonts/**/*"
+      ]
+    },
+    <% } %>
+    <% if (foundationIconFonts) { %>
+    "foundation-icon-fonts": {
+      "main": [
+        "foundation-icons.{css,svg,ttf,eot,woff}"
+      ]
+    },
+    <% } %>
+    <% if (octicons) { %>
+    "octicons": {
+      "main": [
+        "octicons/octicons.{css,svg,ttf,eot,woff}"
+      ]
+    },
+    <% } %>
+    <% if (typicons) { %>
+    "typicons": {
+      "main": [
+        "src/font/typicons.{css,svg,ttf,eot,woff}"
+      ]
+    },
+    <% } %>
+    "jquery": {
+      "main": [
+        "dist/jquery.js",
+        "dist/jquery.min.js"
       ]
     }
   }

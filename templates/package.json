@@ -1,16 +1,17 @@
 {
-  "name": "gulp-workflow",
-  "version": "1.0.0",
-  "description": "Gulp workflow for front-end development",
+  "name": "<%= appNameSlug %>",
+  "version": "<%= appVersion %>",
+  "description": "<%= appDescription %>",
   "main": "gulpfile.js",
   "author": {
-	"name": "mohamdio",
-	"url": "https://mohamd.io"
+  	"name": "<%= authorName %>",
+    "email": "<%= authorEmail %>",
+  	"url": "<%= authorUrl %>"
   },
-  "license": "MIT",
+  "license": "<%= license %>",
   "repository": {
-	"type": "git",
-	"url": "https://github.com/mohamdio/gulp-workflow"
+  	"type": "git",
+  	"url": "https://github.com/<%= userName %>/<%= appNameSlug %>.git"
   },
   "devDependencies": {
     "browser-sync": "^2.11.0",
