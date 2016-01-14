@@ -132,7 +132,16 @@ gulp.task('default', function(done) {
             answers.projectNameSlug = _.slugify(answers.projectName);
             var d = new Date();
             answers.year = d.getFullYear();
-            gulp.src(__dirname + '/templates/**')
+            var files = [__dirname + '/templates/**'];
+            if (answers.cssFramework === 'foundation-sites') {
+                files.push('!' + __dirname + '/templates/source/scss/vendor/bootstrap.scss');
+            } else {
+                files.push('!' + __dirname + '/templates/source/scss/vendor/foundation-sites.scss');
+            }
+            if (!answers.fontAwesome) {
+                files.push('!' + __dirname + '/templates/source/scss/vendor/font-awesome.scss');
+            }
+            gulp.src(files)
                 .pipe(template(answers))
                 .pipe(rename(function(file) {
                     if (file.basename[0] === '_') {
