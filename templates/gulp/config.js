@@ -91,13 +91,12 @@ module.exports = {
         options: {
             includePaths: [
                 path.to.sass.vendor, 
-                <% if 
-                (cssFramework === 'foundation-sites') { %>
+                <% if (cssFramework === 'foundation-sites') { %>
                 path.to.sass.foundation,
-                <% } else if (cssFramework === 'bootstrap v4.0.0-alpha') { %>
+                <% } else if (cssFramework === 'bootstrap-v4.0.0-alpha') { %>
                 path.to.sass.bootstrap,
                 <% } else {} %>
-                <% if (fontAwesome) { %>
+                <% if (iconFonts.indexOf('fontAwesome') !== -1) { %>
                 path.to.sass.fontAwesome
                 <% } %>
             ],

@@ -37,10 +37,10 @@ module.exports = {
             vendor: src + 'scss/vendor/lib/',
             <% if (cssFramework === 'foundation-sites') { %>
             foundation: src + 'scss/vendor/lib/foundation-sites/scss',
-            <% } else if (cssFramework === 'bootstrap v4.0.0-alpha') { %>
+            <% } else if (cssFramework === 'bootstrap-v4.0.0-alpha') { %>
             bootstrap: src + 'scss/vendor/lib/bootstrap/scss',
             <% } else {} %>
-            <% if (fontAwesome) { %>
+            <% if (iconFonts.indexOf('fontAwesome') !== -1) { %>
             fontAwesome: src + 'scss/vendor/lib/font-awesome/scss',
             <% } %>
             dist: {

@@ -24,28 +24,28 @@
     "foundation-sites": "~6.0.5",
     <% } else if (cssFramework === 'bootstrap') { %>
     "bootstrap": "~3.3.6",
-    <% } else if (cssFramework === 'bootstrap v4.0.0-alpha') { %>
+    <% } else if (cssFramework === 'bootstrap-v4.0.0-alpha') { %>
     "bootstrap": "https://github.com/twbs/bootstrap/archive/v4.0.0-alpha.zip",
     <% } else {} %>
-    <% if (fontAwesome) { %>
+    <% if (iconFonts.indexOf('fontAwesome') !== -1) { %>
     "font-awesome": "~4.5.0",
     <% } %>
-    <% if (foundationIconFonts) { %>
+    <% if (iconFonts.indexOf('foundationIconFonts') !== -1) { %>
     "foundation-icon-fonts": "*",
     <% } %>
-    <% if (ionicons) { %>
+    <% if (iconFonts.indexOf('ionicons') !== -1) { %>
     "ionicons": "~2.0.1",
     <% } %>
-    <% if (icoMoon) { %>
+    <% if (iconFonts.indexOf('icoMoon') !== -1) { %>
     "icomoon": "~0.1.0",
     <% } %>
-    <% if (octicons) { %>
+    <% if (iconFonts.indexOf('octicons') !== -1) { %>
     "octicons": "~3.3.0",
     <% } %>
-    <% if (typicons) { %>
+    <% if (iconFonts.indexOf('typicons') !== -1) { %>
     "typicons": "~2.0.7",
     <% } %>
-    <% if (devicons) { %>
+    <% if (iconFonts.indexOf('devicons') !== -1) { %>
     "devicons": "~1.8.0",
     <% } %>
     "jquery": "~2.1.4"
@@ -67,7 +67,7 @@
         "dist/js/bootstrap.min.js"
       ]
     },
-    <% } else if (cssFramework === 'bootstrap v4.0.0-alpha') { %>
+    <% } else if (cssFramework === 'bootstrap-v4.0.0-alpha') { %>
     "bootstrap": {
       "main": [
         "scss/**/*.scss",
@@ -77,7 +77,7 @@
       ]
     },
     <% } else {} %>
-    <% if (fontAwesome) { %>
+    <% if (iconFonts.indexOf('fontAwesome') !== -1) { %>
     "font-awesome": {
       "main": [
         "scss/**/*.scss",
@@ -86,21 +86,21 @@
       ]
     },
     <% } %>
-    <% if (foundationIconFonts) { %>
+    <% if (iconFonts.indexOf('foundationIconFonts') !== -1) { %>
     "foundation-icon-fonts": {
       "main": [
         "foundation-icons.{css,svg,ttf,eot,woff}"
       ]
     },
     <% } %>
-    <% if (octicons) { %>
+    <% if (iconFonts.indexOf('octicons') !== -1) { %>
     "octicons": {
       "main": [
         "octicons/octicons.{css,svg,ttf,eot,woff}"
       ]
     },
     <% } %>
-    <% if (typicons) { %>
+    <% if (iconFonts.indexOf('typicons') !== -1) { %>
     "typicons": {
       "main": [
         "src/font/typicons.{css,svg,ttf,eot,woff}"
