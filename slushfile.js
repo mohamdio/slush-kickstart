@@ -17,4 +17,4 @@ var options = {
 };
 
 // require task
-require('./slush/default/task')(options);
+require('./slush/task')(options);

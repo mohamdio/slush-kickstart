@@ -34,14 +34,20 @@ module.exports = function(options) {
 
                 var files = [options.templatesDir + '/**'];
                 if (answers.cssFramework === 'foundation-sites') {
-                    files.push('!' + options.templatesDir + '/source/scss/vendor/bootstrap.scss');
-                    files.push('!' + options.templatesDir + '/source/templates/includes/bootstrap.nunjucks');
+                    files.push(
+                        '!' + options.templatesDir + '/source/scss/vendor/bootstrap.scss',
+                        '!' + options.templatesDir + '/source/templates/includes/bootstrap.nunjucks'
+                    );
                 } else {
-                    files.push('!' + options.templatesDir + '/source/scss/vendor/foundation-sites.scss');
-                    files.push('!' + options.templatesDir + '/source/templates/includes/foundation.nunjucks');
+                    files.push(
+                        '!' + options.templatesDir + '/source/scss/vendor/foundation-sites.scss',
+                        '!' + options.templatesDir + '/source/templates/includes/foundation.nunjucks'
+                    );
                 }
                 if (answers.iconFonts.indexOf('fontAwesome') === -1) {
-                    files.push('!' + options.templatesDir + '/source/scss/vendor/font-awesome.scss');
+                    files.push(
+                        '!' + options.templatesDir + '/source/scss/vendor/font-awesome.scss'
+                    );
                 }
 
                 // avoid pass images and fonts through gulp-template
