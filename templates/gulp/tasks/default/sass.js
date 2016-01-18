@@ -38,7 +38,7 @@ module.exports = function(gulp, $, path, config) {
         .pipe($.cached, 'sass');
 
     // compile sass task
-    gulp.task(config.task.sass + ':compile', function() {
+    gulp.task(config.task.sass + ':compile', 'compile scss to css', function() {
 
         // avoid writing sourcemaps of sourcemaps
         var filter = $.filter(['*.css', '!*.map'], {
@@ -74,7 +74,7 @@ module.exports = function(gulp, $, path, config) {
     });
 
     // release sass docs task
-    gulp.task(config.task.sass + ':doc', function() {
+    gulp.task(config.task.sass + ':doc', 'release sass docs', function() {
 
         return gulp.src(path.to.sass.src)
             // only pass through changed & newer & not cached files
@@ -88,7 +88,7 @@ module.exports = function(gulp, $, path, config) {
     });
 
     // replace url references in css
-    gulp.task(config.task.sass + ':cssRebaseUrl', function() {
+    gulp.task(config.task.sass + ':cssRebaseUrl', 'replace url references in css', function() {
 
         return gulp.src([
                 path.to.sass.dist.dev + '/**/*.css',
@@ -102,7 +102,7 @@ module.exports = function(gulp, $, path, config) {
     });
 
     // main sass task
-    gulp.task(config.task.sass, function(cb) {
+    gulp.task(config.task.sass, 'main sass task', function(cb) {
 
         $.runSequence(
             config.task.sass + ':compile',

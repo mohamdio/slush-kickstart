@@ -25,7 +25,7 @@ module.exports = function(gulp, $, path, config) {
     var favicons = require('gulp-favicons/es5');
 
     // minify images task
-    gulp.task(config.task.images + ':minify', function() {
+    gulp.task(config.task.images + ':minify', 'minify images', function() {
 
         return gulp.src(path.to.images.src)
             // prevent breaking errors
@@ -45,7 +45,7 @@ module.exports = function(gulp, $, path, config) {
     });
 
     // generate favicons task
-    gulp.task(config.task.images + ':favicons', function() {
+    gulp.task(config.task.images + ':favicons', 'generate favicons', function() {
 
         return gulp.src(path.to.images.logo)
             // prevent breaking errors
@@ -61,7 +61,7 @@ module.exports = function(gulp, $, path, config) {
     });
 
     // main images task
-    gulp.task(config.task.images, function(cb) {
+    gulp.task(config.task.images, 'main images task', function(cb) {
 
         $.runSequence(
             config.task.images + ':minify',

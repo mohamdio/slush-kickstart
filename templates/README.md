@@ -84,6 +84,7 @@ bower install
 - After all done installing, you can run tasks
   * `gulp` to run default tasks for development
   * `gulp build` to build your project for production
+  * `gulp help` to get a listing of available tasks
 
 ####Available Tasks
 Task Name | Subtasks | Description

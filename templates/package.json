@@ -26,6 +26,7 @@
     "gulp-favicons": "2.2.3",
     "gulp-filter": "^3.0.1",
     "gulp-flatten": "^0.2.0",
+    "gulp-help": "^1.6.1",
     "gulp-imagemin": "^2.4.0",
     "gulp-inject": "^3.0.0",
     "gulp-load-plugins": "^1.2.0",

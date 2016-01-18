@@ -29,7 +29,7 @@ module.exports = function(gulp, $, path, config) {
     });
 
     // start css task
-    gulp.task(config.task.build + ':css', function() {
+    gulp.task(config.task.build + ':css', 'build css files (beautify/concat/minify..)', function() {
 
         return gulp.src([
                 // order css files for concat

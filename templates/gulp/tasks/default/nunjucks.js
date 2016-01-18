@@ -23,7 +23,7 @@
 module.exports = function(gulp, $, path, config) {
 
     // render nunjucks files task
-    gulp.task(config.task.nunjucks + ':render', function() {
+    gulp.task(config.task.nunjucks + ':render', 'render nunjucks files', function() {
 
         $.nunjucksRender.nunjucks.configure([path.to.nunjucks.config], {
             watch: false
@@ -51,7 +51,7 @@ module.exports = function(gulp, $, path, config) {
     });
 
     // inject css/js files task
-    gulp.task(config.task.nunjucks + ':inject', function() {
+    gulp.task(config.task.nunjucks + ':inject', 'inject css/js files', function() {
 
         return gulp.src(path.to.dist.dev + '*.html')
             // prevent breaking errors
@@ -93,7 +93,7 @@ module.exports = function(gulp, $, path, config) {
     });
 
     // main nunjucks task
-    gulp.task(config.task.nunjucks, function(cb) {
+    gulp.task(config.task.nunjucks, 'main nunjucks task', function(cb) {
 
         $.runSequence(
             config.task.nunjucks + ':render',

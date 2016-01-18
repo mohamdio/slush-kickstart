@@ -12,7 +12,7 @@
 module.exports = function(gulp, $, path, config) {
 
     // copy js files task
-    gulp.task(config.task.build + ':js', function() {
+    gulp.task(config.task.build + ':js', 'copy js files to prod folder', function() {
 
         return gulp.src(path.to.js.dist.dev + '/*.{js,map}')
             .pipe(gulp.dest(path.to.js.dist.prod));

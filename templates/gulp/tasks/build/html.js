@@ -21,7 +21,7 @@
 module.exports = function(gulp, $, path, config) {
 
     // copy & prettify html files task
-    gulp.task(config.task.build + ':html:copy', function() {
+    gulp.task(config.task.build + ':html:copy', 'copy & prettify html files', function() {
 
         return gulp.src(path.to.dist.dev + '*.html')
             // prevent breaking errors
@@ -41,7 +41,7 @@ module.exports = function(gulp, $, path, config) {
     });
 
     // inject minified css/js files task
-    gulp.task(config.task.build + ':html:inject', function() {
+    gulp.task(config.task.build + ':html:inject', 'inject minified css/js files', function() {
 
         return gulp.src(path.to.dist.prod + '*.html')
             // prevent breaking errors
@@ -67,7 +67,7 @@ module.exports = function(gulp, $, path, config) {
     });
 
     // main html task
-    gulp.task(config.task.build + ':html', function(cb) {
+    gulp.task(config.task.build + ':html', 'main build:html task', function(cb) {
 
         $.runSequence(
             config.task.build + ':html:copy',

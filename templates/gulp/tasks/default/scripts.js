@@ -32,7 +32,7 @@ module.exports = function(gulp, $, path, config) {
     var b = $.watchify($.browserify(opts));
 
     // browserify task
-    gulp.task(config.task.scripts + ':browserify', bundle);
+    gulp.task(config.task.scripts + ':browserify', 'browserify js files', bundle);
 
     // watchify update
     b.on('update', bundle);
@@ -59,7 +59,7 @@ module.exports = function(gulp, $, path, config) {
     }
 
     // copy source js files to build/dev
-    gulp.task(config.task.scripts + ':copySrc', function() {
+    gulp.task(config.task.scripts + ':copySrc', 'copy source js files to build/dev', function() {
 
         return gulp.src(path.to.js.src.copy)
             .pipe(gulp.dest(path.to.js.dist.dev + '/src'));
@@ -67,7 +67,7 @@ module.exports = function(gulp, $, path, config) {
     });
 
     // main js task
-    gulp.task(config.task.scripts, function(cb) {
+    gulp.task(config.task.scripts, 'main js task', function(cb) {
 
         $.runSequence(
             config.task.scripts + ':browserify',

@@ -18,14 +18,14 @@
 module.exports = function(gulp, $, path, config) {
 
     // clear all caches enough
-    gulp.task(config.task.clean + ':cache', function() {
+    gulp.task(config.task.clean + ':cache', 'clear all caches enough', function() {
 
         $.cached.caches = {};
 
     });
 
     // delete production folder [build/prod]
-    gulp.task(config.task.clean + ':prod', function() {
+    gulp.task(config.task.clean + ':prod', 'delete production folder [build/prod]', function() {
 
         return $.del([
             path.to.dist.prod
@@ -34,7 +34,7 @@ module.exports = function(gulp, $, path, config) {
     });
 
     // delete dest folder [build] and clear all caches
-    gulp.task(config.task.clean, [config.task.clean + ':cache', config.task.bower + ':clean'], function() {
+    gulp.task(config.task.clean, 'delete dest folder [build] and clear all caches \n', [config.task.clean + ':cache', config.task.bower + ':clean'], function() {
 
         return $.del([
             path.to.dist.main,
