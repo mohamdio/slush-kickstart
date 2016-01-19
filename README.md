@@ -7,7 +7,7 @@ A slush generator to scaffold front-end projects.
 - [Support](https://github.com/mohamdio/slush-kickstart#support)
 - [License](https://github.com/mohamdio/slush-kickstart#license)
 
-![slush kickstart](/mohamdio/slush-kickstart/blob/master/screenshot.png "Slush Kickstart")
+![slush kickstart](screenshot.png "Slush Kickstart")
 
 ## Features
 ####Kickstart Features:
