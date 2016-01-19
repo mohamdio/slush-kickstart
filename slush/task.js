@@ -20,6 +20,19 @@ module.exports = function(options) {
 
     gulp.task('default', function(done) {
 
+        // show welcome message
+        gutil.log(
+            '\n\n           . ----------------------------- .      \n'+
+            '           |            '+gutil.colors.magenta('_--╱--_')+'            |     \n'+
+            '           |           '+gutil.colors.magenta('| Slush |')+'           |     \n'+
+            '           |            '+gutil.colors.magenta('|  ◼  |')+'            |     \n'+
+            '           |             '+gutil.colors.magenta('|___|')+'             |     \n'+
+            '           |                               |     \n'+
+            '           |      ' + gutil.colors.yellow('Welcome to Kickstart')+'     |      \n'+
+            '           . ----------------------------- .        \n'
+
+        );
+
         // start asking & start task
         inquirer.prompt(questions,
             function(answers) {

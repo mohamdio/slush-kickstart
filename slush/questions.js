@@ -4,51 +4,54 @@
 // require defaults
 var defaults = require('./defaults');
 
+// require gulp-util
+var gutil = require('gulp-util');
+
 // set questions
 function setQuestions() {
 
     var prompts = [{
         name: 'projectName',
-        message: 'What is the name of your project?',
+        message: gutil.colors.magenta('What is the name of your project?'),
         default: defaults.projectName
     }, {
         name: 'projectDescription',
-        message: 'What is the description?'
+        message: gutil.colors.magenta('What is the description?')
     }, {
         name: 'projectVersion',
-        message: 'What is the version of your project?',
+        message: gutil.colors.magenta('What is the version of your project?'),
         default: '1.0.0'
     }, {
         name: 'authorName',
-        message: 'What is the author name?',
+        message: gutil.colors.magenta('What is the author name?'),
         default: defaults.authorName
     }, {
         name: 'authorEmail',
-        message: 'What is the author email?',
+        message: gutil.colors.magenta('What is the author email?'),
         default: defaults.authorEmail
     }, {
         name: 'authorUrl',
-        message: 'What is the author url?'
+        message: gutil.colors.magenta('What is the author url?')
     }, {
         name: 'userName',
-        message: 'What is the github username?',
+        message: gutil.colors.magenta('What is the github username?'),
         default: defaults.userName
     }, {
         type: 'list',
         name: 'license',
-        message: 'What is the project license?',
+        message: gutil.colors.magenta('What is the project license?'),
         choices: ['MIT', 'BSD'],
         default: 'MIT'
     }, {
         type: 'list',
         name: 'cssFramework',
-        message: 'What is the css framework want to use?',
+        message: gutil.colors.magenta('What is the css framework want to use?'),
         choices: ['foundation-sites', 'bootstrap', 'bootstrap-v4.0.0-alpha'],
         default: 'foundation-sites'
     }, {
         type: 'checkbox',
         name: 'iconFonts',
-        message: 'Which icon fonts want to include?',
+        message: gutil.colors.magenta('Which icon fonts want to include?'),
         choices: [{
             name: 'Font Awesome',
             value: 'fontAwesome',
@@ -75,7 +78,7 @@ function setQuestions() {
     }, {
         type: 'confirm',
         name: 'moveon',
-        message: 'Continue?'
+        message: gutil.colors.green('Continue?')
     }];
 
     return prompts;

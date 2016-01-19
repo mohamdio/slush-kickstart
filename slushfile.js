@@ -5,6 +5,15 @@
  *
  * Copyright (c) 2016, mohamdio
  * Licensed under the MIT license.
+ *
+ *         . ----------------------------- .      
+           |            _--╱--_            |     
+           |           | Slush |           |     
+           |            |  ◼  |            |     
+           |             |___|             |     
+           |                               |     
+           |      Welcome to Kickstart     |      
+           . ----------------------------- . 
  */
 
 'use strict';

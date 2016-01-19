@@ -10,6 +10,10 @@ A slush generator to scaffold front-end projects.
 - [License](https://github.com/mohamdio/slush-kickstart#license)
 
 ## Features
+###Kickstart Features:
+- 
+
+###Gulp Workflow Features:
 - Organized & splitting tasks files
 - Using gulp-load-plugins
 - Define tasks options & paths from one file
