@@ -1,5 +1,3 @@
-work in progress..
-
 ## Slush Kickstart [![Build Status](https://travis-ci.org/mohamdio/slush-kickstart.svg?branch=master)](https://travis-ci.org/mohamdio/slush-kickstart)
 A slush generator to scaffold front-end projects.
 - [Features](https://github.com/mohamdio/slush-kickstart#features)
@@ -9,12 +7,26 @@ A slush generator to scaffold front-end projects.
 - [Support](https://github.com/mohamdio/slush-kickstart#support)
 - [License](https://github.com/mohamdio/slush-kickstart#license)
 
+```bash
+           . ----------------------------- .      
+           |            _--╱--_            |     
+           |           | Slush |           |     
+           |            |  ◼  |            |     
+           |             |___|             |     
+           |                               |     
+           |      Welcome to Kickstart     |      
+           . ----------------------------- .  
+? What is the name of your project? Slush Kickstart
+? What is the description? A slush generator to scaffold front-end projects
+```
+
 ## Features
 ####Kickstart Features:
 - Include foundation-sites framework
 - Include bootstrap framework
 - Include bootstrap v4.0.0-alpha (include sass)
-- Include most of icon fonts library (fontAwesome, ionicons, typicons ..)
+- Include most of icon fonts libraries (fontAwesome, ionicons, typicons ..)
+- Include all gulp workflow features below
 
 ####Gulp Workflow Features:
 - Organized & splitting tasks files
