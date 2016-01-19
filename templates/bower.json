@@ -1,16 +1,6 @@
 {
   "name": "<%= projectName %>",
   "description": "<%= projectDescription %>",
-  "authors": [
-    "<%= authorName %> <<%= authorEmail %>> (<%= authorUrl %>)"
-  ],
-  "license": "<%= license %>",
-  "homepage": "https://github.com/<%= userName %>/<%= projectNameSlug %>",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/<%= userName %>/<%= projectNameSlug %>.git"
-  },
-  "moduleType": [],
   "private": true,
   "ignore": [
     "**/.*",

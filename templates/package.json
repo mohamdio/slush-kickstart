@@ -3,16 +3,7 @@
   "version": "<%= projectVersion %>",
   "description": "<%= projectDescription %>",
   "main": "gulpfile.js",
-  "author": {
-  	"name": "<%= authorName %>",
-    "email": "<%= authorEmail %>",
-  	"url": "<%= authorUrl %>"
-  },
-  "license": "<%= license %>",
-  "repository": {
-  	"type": "git",
-  	"url": "https://github.com/<%= userName %>/<%= projectNameSlug %>.git"
-  },
+  "private": true,
   "devDependencies": {
     "browser-sync": "^2.11.0",
     "browserify": "^12.0.2",
