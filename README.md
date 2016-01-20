@@ -35,7 +35,7 @@ A slush generator to scaffold front-end projects using [Gulp Workflow](https://g
 - Image optimization
 - Generate favicons
 - Concat css/js files
-- & more, take a look at the gulp plugins used in [package.json](https://github.com/mohamdio/slush-kickstart/blob/master/package.json)
+- & more, take a look at the gulp plugins used in [package.json](https://github.com/mohamdio/slush-kickstart/blob/master/templates/package.json)
 
 ## Getting Started
 - Install [Node.js](https://nodejs.org/)
