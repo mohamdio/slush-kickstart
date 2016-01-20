@@ -1,9 +1,10 @@
-##Source folder structure for gulp workflow
-A source structure for this [gulp front-end workflow](https://github.com/mohamdio/gulp-workflow) scss, js, nunjucks, images, fonts.
+##Source folder structure
+A source folder structure which contain this files: scss, js, nunjucks, images, fonts.
 
 ```
 ├── fonts
 │   └── vendor
+│   │   └── # icon fonts
 │   ├── # main fonts
 ├── images
 │   └── # images
@@ -21,6 +22,8 @@ A source structure for this [gulp front-end workflow](https://github.com/mohamdi
 │       └── vendor.scss
 └── templates
     ├── includes
+    │   └── bootstrap.nunjucks
+    │   └── foundation.nunjucks
     ├── index.nunjucks
     ├── layouts
     │   └── default.nunjucks
