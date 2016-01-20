@@ -17,8 +17,10 @@
 
 <body>
     {% block content %}{% endblock %}
+    <!-- build:js -->
     <!-- inject:js -->
     <!-- endinject -->
+    <!-- endbuild -->
 </body>
 
 </html>
