@@ -1,4 +1,4 @@
-# Slush Kickstart [![travis-ci status](https://img.shields.io/travis/mohamdio/slush-kickstart.svg?style=flat-square)](https://travis-ci.org/mohamdio/slush-kickstart)
+# Slush Kickstart [![Build Status](https://travis-ci.org/mohamdio/slush-kickstart.svg?branch=master)](https://travis-ci.org/mohamdio/slush-kickstart)
 A slush generator to scaffold front-end projects using [Gulp Workflow](https://github.com/mohamdio/gulp-workflow).
 - [Features](https://github.com/mohamdio/slush-kickstart#features)
 - [Getting Started](https://github.com/mohamdio/slush-kickstart#getting-started)
