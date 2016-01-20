@@ -6,8 +6,6 @@ A slush generator to scaffold front-end projects using [Gulp Workflow](https://g
 - [Gulp Tasks Structure](https://github.com/mohamdio/slush-kickstart#gulp-tasks-structure)
 - [Folders Structure](https://github.com/mohamdio/slush-kickstart#folders-structure)
 - [Configuration & Paths](https://github.com/mohamdio/slush-kickstart#configuration--paths)
-- [Getting To Know Slush](https://github.com/mohamdio/slush-kickstart#getting-to-know-slush)
-- [License](https://github.com/mohamdio/slush-kickstart#license)
 
 ![slush kickstart](screenshot.png "Slush Kickstart")
 
