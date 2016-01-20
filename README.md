@@ -15,6 +15,7 @@ A slush generator to scaffold front-end projects using [Gulp Workflow](https://g
 - Include bootstrap framework
 - Include bootstrap v4.0.0-alpha (include sass)
 - Include most of icon fonts libraries (fontAwesome, ionicons, typicons ..)
+- Include jQuery library
 - Include all gulp workflow features below
 
 ####Gulp Workflow Features:
