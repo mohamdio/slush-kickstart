@@ -1,4 +1,10 @@
+v1.0.1:
+  date: 2016-1-20
+  changes:
+    - Update gulp workflow.
+    - Remove user options.
+
 v1.0.0:
-  date: 2016-1-10
+  date: 2016-1-19
   changes:
     - Initial release.
