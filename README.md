@@ -1,4 +1,4 @@
-# Slush Kickstart [![Travis](https://img.shields.io/travis/mohamdio/slush-kickstart.svg?style=flat-square)](https://travis-ci.org/mohamdio/slush-kickstart)
+# Slush Kickstart [![Travis](https://img.shields.io/travis/mohamdio/slush-kickstart.svg?style=flat-square)](https://travis-ci.org/mohamdio/slush-kickstart) [![GitHub release](https://img.shields.io/github/release/mohamdio/slush-kickstart.svg?style=flat-square)](https://github.com/mohamdio/slush-kickstart/releases/latest) [![npm](https://img.shields.io/npm/dt/slush-kickstart.svg?style=flat-square)](https://www.npmjs.com/package/slush-kickstart) [![GitHub license](https://img.shields.io/github/license/mohamdio/slush-kickstart.svg?style=flat-square)](https://github.com/mohamdio/slush-kickstart/blob/master/LICENSE)
 A slush generator to scaffold front-end projects using [Gulp Workflow](https://github.com/mohamdio/gulp-workflow).
 - [Features](https://github.com/mohamdio/slush-kickstart#features)
 - [Getting Started](https://github.com/mohamdio/slush-kickstart#getting-started)
@@ -251,4 +251,4 @@ See the [CONTRIBUTING Guidelines](https://github.com/mohamdio/slush-kickstart/bl
 If you have any problem or suggestion please open an issue [here](https://github.com/mohamdio/slush-kickstart/issues).
 
 ## License
-The code is available under the [MIT License](https://github.com/mohamdio/slush-kickstart/LICENSE).
+The code is available under the [MIT License](https://github.com/mohamdio/slush-kickstart/blob/master/LICENSE).
