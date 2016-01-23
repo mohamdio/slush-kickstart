@@ -1,4 +1,4 @@
-# Slush Kickstart [![Travis](https://img.shields.io/travis/mohamdio/slush-kickstart.svg?style=flat-square)](https://travis-ci.org/mohamdio/slush-kickstart) [![npm](https://img.shields.io/npm/v/slush-kickstart.svg?style=flat-square)](https://www.npmjs.com/package/slush-kickstart) [![npm](https://img.shields.io/npm/dt/slush-kickstart.svg?style=flat-square)](https://www.npmjs.com/package/slush-kickstart)
+# Slush Kickstart [![Travis](https://img.shields.io/travis/mohamdio/slush-kickstart.svg?style=flat-square)](https://travis-ci.org/mohamdio/slush-kickstart)[![npm](https://img.shields.io/npm/v/slush-kickstart.svg?style=flat-square)](https://www.npmjs.com/package/slush-kickstart)[![npm](https://img.shields.io/npm/dt/slush-kickstart.svg?style=flat-square)](https://www.npmjs.com/package/slush-kickstart)
 A slush generator to scaffold front-end projects using [Gulp Workflow](https://github.com/mohamdio/gulp-workflow).
 - [Features](https://github.com/mohamdio/slush-kickstart#features)
 - [Getting Started](https://github.com/mohamdio/slush-kickstart#getting-started)
