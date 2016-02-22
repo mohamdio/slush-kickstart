@@ -49,12 +49,23 @@ module.exports = function(options) {
                 if (answers.cssFramework === 'foundation-sites') {
                     files.push(
                         '!' + options.templatesDir + '/source/scss/vendor/bootstrap.scss',
-                        '!' + options.templatesDir + '/source/templates/includes/bootstrap.nunjucks'
+                        '!' + options.templatesDir + '/source/scss/vendor/bulma.scss',
+                        '!' + options.templatesDir + '/source/templates/includes/bootstrap.nunjucks',
+                        '!' + options.templatesDir + '/source/templates/includes/bulma.nunjucks'
+                    );
+                } else if (answers.cssFramework === 'bulma') {
+                    files.push(
+                        '!' + options.templatesDir + '/source/scss/vendor/bootstrap.scss',
+                        '!' + options.templatesDir + '/source/scss/vendor/foundation-sites.scss',
+                        '!' + options.templatesDir + '/source/templates/includes/bootstrap.nunjucks',
+                        '!' + options.templatesDir + '/source/templates/includes/foundation.nunjucks'
                     );
                 } else {
                     files.push(
                         '!' + options.templatesDir + '/source/scss/vendor/foundation-sites.scss',
-                        '!' + options.templatesDir + '/source/templates/includes/foundation.nunjucks'
+                        '!' + options.templatesDir + '/source/scss/vendor/bulma.scss',
+                        '!' + options.templatesDir + '/source/templates/includes/foundation.nunjucks',
+                        '!' + options.templatesDir + '/source/templates/includes/bulma.nunjucks'
                     );
                 }
                 if (answers.iconFonts.indexOf('fontAwesome') === -1) {

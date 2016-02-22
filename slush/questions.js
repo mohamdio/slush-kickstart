@@ -48,7 +48,7 @@ function setQuestions() {
         type: 'list',
         name: 'cssFramework',
         message: gutil.colors.magenta('What is the css framework want to use?'),
-        choices: ['foundation-sites', 'bootstrap', 'bootstrap-v4.0.0-alpha'],
+        choices: ['foundation-sites', 'bootstrap', 'bootstrap-v4.0.0-alpha', 'bulma'],
         default: 'foundation-sites'
     }, {
         type: 'checkbox',

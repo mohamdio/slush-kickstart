@@ -8,5 +8,7 @@
 {% include "includes/foundation.nunjucks" %}
 <% } else if (cssFramework === 'bootstrap' || cssFramework === 'bootstrap v4.0.0-alpha') { %>
 {% include "includes/bootstrap.nunjucks" %}
+<% } else if (cssFramework === 'bulma') { %>
+{% include "includes/bulma.nunjucks" %}
 <% } else {} %>
 {% endblock %}

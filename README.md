@@ -14,6 +14,7 @@ A slush generator to scaffold front-end projects using [Gulp Workflow](https://g
 - Include foundation-sites framework
 - Include bootstrap framework
 - Include bootstrap v4.0.0-alpha (include sass)
+- Include bulma framework
 - Include most of icon fonts libraries (fontAwesome, ionicons, typicons ..)
 - Include jQuery library
 - Include all gulp workflow features below
@@ -186,8 +187,9 @@ slush-kickstart
 │   │   └── main.scss
 │   └── templates
 │       ├── includes
+│       │   └── foundation.nunjucks
 │       │   └── bootstrap.nunjucks
-│       │   └── bootstrap.nunjucks
+│       │   └── bulma.nunjucks
 │       ├── layouts
 │       │   └── default.nunjucks
 │       ├── macros

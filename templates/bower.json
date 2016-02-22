@@ -16,6 +16,8 @@
     "bootstrap": "~3.3.6",
     <% } else if (cssFramework === 'bootstrap-v4.0.0-alpha') { %>
     "bootstrap": "https://github.com/twbs/bootstrap/archive/v4.0.0-alpha.zip",
+    <% } else if (cssFramework === 'bulma') { %>
+    "bulma": "~0.0.15",
     <% } else {} %>
     <% if (iconFonts.indexOf('fontAwesome') !== -1) { %>
     "font-awesome": "~4.5.0",
@@ -64,6 +66,13 @@
         "dist/css/bootstrap.css",
         "dist/js/bootstrap.js",
         "dist/js/bootstrap.min.js"
+      ]
+    },
+    <% } else if (cssFramework === 'bulma') { %>
+    "bulma": {
+      "main": [
+        "bulma/**/*.sass",
+        "css/bulma.css"
       ]
     },
     <% } else {} %>

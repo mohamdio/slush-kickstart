@@ -50,7 +50,7 @@ module.exports = function(gulp, $, path, config) {
     // copy SCSS files
     gulp.task(config.task.bower + ':scss', 'copy scss files', function() {
 
-        return gulp.src($.mainBowerFiles('**/*.scss'), 
+        return gulp.src($.mainBowerFiles('**/*.{scss,sass}'),
                 config.mainBowerFiles.options // options
             )
             .pipe($.cached('bowerScss')) // start cache

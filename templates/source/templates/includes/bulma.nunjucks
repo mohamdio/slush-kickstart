@@ -1,0 +1,5 @@
+<div class="container">
+	<h1 class="title">test2</h1>
+	<h2 class="subtitle">Welcome to Bulma</h2>
+	<p>A modern CSS framework based on Flexbox</p>
+</div>
