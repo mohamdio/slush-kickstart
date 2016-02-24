@@ -256,3 +256,6 @@ If you have any problem or suggestion please open an issue [here](https://github
 The code is available under the [MIT License](https://github.com/mohamdio/slush-kickstart/blob/master/LICENSE).
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/mohamdio/slush-kickstart/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/mohamdio/slush-kickstart/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
