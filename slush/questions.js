@@ -1,4 +1,4 @@
-// slush/default/questions.js
+// slush/questions.js
 'use strict';
 
 // require defaults

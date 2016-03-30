@@ -1,3 +1,16 @@
+v1.0.3:
+  date: 2016-3-30
+  changes:
+    - fixed kickstarting breaks.
+    - edit setDefaults function name.
+    - update packagae version.
+
+v1.0.2:
+  date: 2016-2-24
+  changes:
+    - include bulma css framework.
+    - update packagae version.
+
 v1.0.1:
   date: 2016-1-20
   changes:

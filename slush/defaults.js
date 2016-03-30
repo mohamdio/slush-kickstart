@@ -1,4 +1,4 @@
-// slush/default/defaults.js
+// slush/defaults.js
 'use strict';
 
 // require plugins
@@ -7,7 +7,7 @@ var path      = require('path'),
     fs        = require('fs');
 
 // get default answers
-function setDefautls() {
+function setDefaults() {
 
     function format(string) {
         var username = string.toLowerCase();
@@ -26,10 +26,8 @@ function setDefautls() {
     }
 
     configFile = path.join(path.resolve(homeDir), '.gitconfig');
-
-    if (fs.existsSync(configFile)) {
-        user = iniparser.parseSync(configFile).user || {};
-    }
+    
+    user = fs.existsSync(configFile) ? iniparser.parseSync(configFile).user : {};
 
     return {
         projectName: workingDirName,
@@ -40,4 +38,4 @@ function setDefautls() {
 
 }
 
-module.exports = setDefautls();
+module.exports = setDefaults();

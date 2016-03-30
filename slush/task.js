@@ -1,4 +1,4 @@
-// slush/default/task.js
+// slush/task.js
 'use strict';
 
 // require plugins
@@ -10,7 +10,8 @@ var gulp     = require('gulp'),
     _        = require('underscore.string'),
     inquirer = require('inquirer'),
     filter   = require('gulp-filter'),
-    gutil    = require('gulp-util');
+    gutil    = require('gulp-util'),
+    version  = 'v1.0.3';
 
 // require questions
 var questions = require('./questions');
@@ -29,6 +30,7 @@ module.exports = function(options) {
             '           |             '+gutil.colors.magenta('|___|')+'             |     \n'+
             '           |                               |     \n'+
             '           |      ' + gutil.colors.yellow('Welcome to Kickstart')+'     |      \n'+
+            '           |             ' + gutil.colors.blue(version)+'            |      \n'+
             '           . ----------------------------- .        \n'
 
         );
